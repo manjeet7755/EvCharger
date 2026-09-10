@@ -1,0 +1,194 @@
+body{
+    background-image: url(photos/login2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.form{
+    color: white;
+    margin-left :auto ;
+    width: 450;
+    padding-top: 0;
+
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 2px solid rgba(255,255,255,.2);
+    box-shadow: 0 0  30px;
+    width: 703;
+    height: 1175;
+}
+.head{
+    font-size:40 ;
+}
+
+.login{
+    color: white;
+    text-decoration: none;
+}
+
+.login:hover{
+    text-decoration: underline;
+}
+
+.one{
+    margin-left: 60;
+    margin-top: 100;
+}
+
+
+.cred{
+    margin-top: 50;
+    
+}
+
+.first{
+    color: white;
+    background: transparent;
+    width: 250;
+    margin-right: 50;
+    height: 50;
+    border-radius: 10px;
+    font-size: 20;
+}
+
+.second{
+    color: white;
+    background: transparent;
+    width: 250;
+    height: 50;
+    border-radius: 10px;
+    font-size: 20;
+}
+
+.mail{
+       background: transparent;
+    width: 450;
+    height: 50;
+    border-radius: 10px;
+    font-size: 20;
+    color: white;
+}
+
+.pass{
+       background: transparent;
+    width: 450;
+    height: 50;
+    border-radius: 10px;
+    font-size: 20;
+    margin-bottom: 60;
+    color: white;
+}
+
+.sign{
+       width: 450;
+    height: 50;
+    border-radius: 30px;
+    font-size: 20;
+    margin-top:90 ;
+    background-color:  rgb(4, 182, 4);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sign:hover{
+   background-color:  rgb(6, 235, 6);
+    height: 60;
+    transition: .4s;
+}
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0;
+    width: 450px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: white;
+}
+
+.divider p {
+   
+    color: #8b95a5;
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+
+
+.google{
+
+    margin-bottom: 40;
+  
+
+}
+
+.goog{
+    height: 30;
+}
+
+.googbtn{
+  width: 450;
+    height: 50;
+    border-radius: 30px;
+    font-size: 20;
+        cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-weight: bold;
+    border: none;
+}
+
+.googbtn:hover{
+    background-color: black;
+    color: white;
+}
+
+
+.apple{
+margin-bottom: 100;
+}
+
+.app{
+
+height: 30;
+}
+
+.appbtn{
+background-color: black;
+color: white;
+ width: 450;
+    height: 50;
+    border-radius: 30px;
+    font-size: 20;
+     font-weight: bold;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+
+}
+
+
+.end{
+    text-align: center;
+    width: 450;
+}
+
+.e{
+    font-size: 18;
+}
+
+.p{
+    font-size: 18;
+}

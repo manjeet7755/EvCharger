@@ -1,0 +1,968 @@
+body{
+    background-image:url(photos/login2.png);
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 80%;
+
+    margin-left: auto;
+    margin-right: 260px;
+  
+    width: 450px;
+}
+
+.form{
+    color: white;
+    width: 703;
+    height: 1175;
+    background: transparent;
+   backdrop-filter: blur(20px);
+    border: 2px solid rgba(255,255,255,.2);
+    box-shadow: 0 0  30px;
+}
+
+
+
+.head{
+    color: white;
+    font-size: 40;
+    margin-bottom: 2;
+}
+
+.email{
+    font-size: 20;
+    margin-top: 40;
+    color: white;
+}
+
+.emai{
+    border: 2;
+    width: 450;
+    height: 50;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 18;
+}
+
+
+
+
+.pass{
+    color: white;
+
+      border: 2;
+    width: 450;
+    height: 50;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    font-size: 18;
+    margin-bottom: 60;
+}
+
+
+.options{
+    align-items: center;
+    margin-bottom: 150;
+}
+.forgot{
+    text-decoration: none;
+    color: rgb(6, 235, 6);
+    margin-left:250;
+
+}
+
+.forgot:hover{
+    text-decoration: underline;
+}
+
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 35px 0;
+    width: 450px;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: white;
+}
+
+.divider p {
+   
+    color: #8b95a5;
+    font-size: 15px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+
+.google{
+margin-bottom: 40;
+cursor: pointer;
+
+    width: 450;
+    height: 50;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(244, 247, 244);
+    font-size: 20;
+    font-weight: bold;
+      align-items: center;
+      font-size: 20;
+       display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    }
+
+
+
+
+.apple{
+    margin-bottom: 100;
+cursor: pointer;
+
+  cursor: pointer;
+    width: 450;
+    height: 50;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(0, 0, 0);
+    font-size: 20;
+    font-weight: bold;
+      align-items: center;
+      font-size: 20;
+      color: white;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+}
+.goog{/* =========================================
+   RESET
+   ========================================= */
+
+/*
+    The * selector applies to every element.
+
+    box-sizing: border-box makes width and height
+    calculations easier.
+*/
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+   ========================================= */
+
+body {
+
+    /*
+        Remove the browser's default margin.
+    */
+    margin: 0;
+
+    /*
+        Make the body fill the entire screen.
+    */
+    min-height: 100vh;
+
+    /*
+        Center the login box horizontally
+        and vertically.
+    */
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+    /*
+        Background image.
+    */
+    background-image: url("photos/login2.png");
+
+    /*
+        Make the image cover the entire screen.
+    */
+    background-size: cover;
+
+    /*
+        Prevent the image from repeating.
+    */
+    background-repeat: no-repeat;
+
+    /*
+        Keep the center of the image visible.
+    */
+    background-position: center;
+
+
+    /*
+        Use a clean font.
+    */
+    font-family: Arial, sans-serif;
+
+    /*
+        Default text color.
+    */
+    color: white;
+
+}
+
+
+/* =========================================
+   MAIN GLASS LOGIN BOX
+   ========================================= */
+
+.form {
+
+    /*
+        Width of the glass box.
+    */
+    width: 550px;
+
+
+    /*
+        Minimum height.
+
+        We use min-height instead of forcing
+        a very large height.
+    */
+    min-height: 700px;
+
+
+    /*
+        Transparent white background.
+
+        The transparency allows the background
+        image to be visible through the box.
+    */
+    background: rgba(255, 255, 255, 0.10);
+
+
+    /*
+        THIS IS THE IMPORTANT GLASS EFFECT.
+
+        backdrop-filter blurs whatever is
+        BEHIND the box.
+    */
+    backdrop-filter: blur(20px);
+
+    /*
+        Safari support.
+    */
+    -webkit-backdrop-filter: blur(20px);
+
+
+    /*
+        Thin white transparent border.
+
+        This gives the glass a visible edge.
+    */
+    border: 2px solid rgba(255, 255, 255, 0.20);
+
+
+    /*
+        Soft shadow around the glass box.
+    */
+    box-shadow:
+        0 0 30px rgba(0, 0, 0, 0.25);
+
+
+    /*
+        Rounded corners.
+    */
+    border-radius: 25px;
+
+
+    /*
+        Prevent content from going outside
+        the rounded corners.
+    */
+    overflow: hidden;
+
+}
+
+
+/* =========================================
+   CONTENT INSIDE FORM
+   ========================================= */
+
+.cont {
+
+    /*
+        Space between the content and
+        the edges of the glass box.
+    */
+    padding: 45px 50px;
+
+}
+
+
+/* =========================================
+   HEADING
+   ========================================= */
+
+.head {
+
+    /*
+        Heading color.
+    */
+    color: white;
+
+    /*
+        Font size.
+    */
+    font-size: 40px;
+
+    /*
+        Remove unnecessary default margin.
+    */
+    margin: 0 0 5px 0;
+
+}
+
+
+/* =========================================
+   SUBTITLE
+   ========================================= */
+
+.subtitle {
+
+    /*
+        Slightly transparent white.
+    */
+    color: rgba(255, 255, 255, 0.75);
+
+    /*
+        Font size.
+    */
+    font-size: 16px;
+
+    /*
+        Space below subtitle.
+    */
+    margin-top: 0;
+
+}
+
+
+/* =========================================
+   EMAIL SECTION
+   ========================================= */
+
+.email-section {
+
+    /*
+        Space above email section.
+    */
+    margin-top: 35px;
+
+}
+
+
+/*
+    Email text.
+*/
+.email-label {
+
+    color: white;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/*
+    Email input.
+*/
+.email-input {
+
+    /*
+        Width of input.
+    */
+    width: 100%;
+
+    /*
+        Height of input.
+    */
+    height: 50px;
+
+    /*
+        Transparent background.
+
+        This allows the glass background
+        to remain visible.
+    */
+    background: rgba(255, 255, 255, 0.08);
+
+    /*
+        White transparent border.
+    */
+    border: 2px solid rgba(255, 255, 255, 0.25);
+
+    /*
+        Rounded corners.
+    */
+    border-radius: 10px;
+
+    /*
+        Text color.
+    */
+    color: white;
+
+    /*
+        Input font size.
+    */
+    font-size: 17px;
+
+    /*
+        Space inside the input.
+    */
+    padding: 0 15px;
+
+    /*
+        Remove default outline.
+    */
+    outline: none;
+
+}
+
+
+/*
+    Change border when the user clicks
+    inside the email input.
+*/
+.email-input:focus {
+
+    border-color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+/*
+    Placeholder text.
+*/
+.email-input::placeholder {
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+
+/* =========================================
+   PASSWORD SECTION
+   ========================================= */
+
+.password-section {
+
+    margin-top: 25px;
+
+}
+
+
+/*
+    Password label.
+*/
+.password-label {
+
+    color: white;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+
+}
+
+
+/*
+    Password input.
+*/
+.password-input {
+
+    width: 100%;
+
+    height: 50px;
+
+    background: rgba(255, 255, 255, 0.08);
+
+    border: 2px solid rgba(255, 255, 255, 0.25);
+
+    border-radius: 10px;
+
+    color: white;
+
+    font-size: 17px;
+
+    padding: 0 15px;
+
+    outline: none;
+
+}
+
+
+/*
+    Password input when selected.
+*/
+.password-input:focus {
+
+    border-color: rgba(255, 255, 255, 0.7);
+
+}
+
+
+/*
+    Password placeholder.
+*/
+.password-input::placeholder {
+
+    color: rgba(255, 255, 255, 0.65);
+
+}
+
+
+/* =========================================
+   REMEMBER ME + FORGOT PASSWORD
+   ========================================= */
+
+.options {
+
+    /*
+        Put remember me and forgot password
+        on the same line.
+    */
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    /*
+        Space above and below.
+    */
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+
+}
+
+
+/*
+    Remember me section.
+*/
+.remember {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    font-size: 14px;
+
+}
+
+
+/*
+    Forgot password link.
+*/
+.forgot {
+
+    color: rgb(6, 235, 6);
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+}
+
+
+/*
+    Underline when mouse is over
+    forgot password.
+*/
+.forgot:hover {
+
+    text-decoration: underline;
+
+}
+
+
+/* =========================================
+   LOGIN BUTTON
+   ========================================= */
+
+.logBut {
+
+    /*
+        Full width.
+    */
+    width: 100%;
+
+    height: 50px;
+
+    /*
+        Remove default button border.
+    */
+    border: none;
+
+    /*
+        Rounded button.
+    */
+    border-radius: 30px;
+
+    /*
+        Green background.
+    */
+    background-color: rgb(4, 182, 4);
+
+    /*
+        White text.
+    */
+    color: white;
+
+    /*
+        Text size.
+    */
+    font-size: 20px;
+
+    /*
+        Bold text.
+    */
+    font-weight: bold;
+
+    /*
+        Mouse pointer.
+    */
+    cursor: pointer;
+
+    /*
+        Smooth animation.
+    */
+    transition: 0.3s;
+
+}
+
+
+/*
+    Login button hover effect.
+*/
+.logBut:hover {
+
+    background-color: rgb(6, 235, 6);
+
+    /*
+        Slightly increase the button size.
+    */
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================
+   DIVIDER
+   ========================================= */
+
+.divider {
+
+    /*
+        Put lines and text in one row.
+    */
+    display: flex;
+
+    /*
+        Vertically center everything.
+    */
+    align-items: center;
+
+    /*
+        Space between lines and text.
+    */
+    gap: 15px;
+
+    /*
+        Space above and below divider.
+    */
+    margin: 35px 0;
+
+    /*
+        Full available width.
+    */
+    width: 100%;
+
+}
+
+
+/*
+    Horizontal lines.
+*/
+.divider span {
+
+    /*
+        Each line takes equal space.
+    */
+    flex: 1;
+
+    height: 1px;
+
+    /*
+        Transparent white line.
+    */
+    background-color: rgba(255, 255, 255, 0.35);
+
+}
+
+
+/*
+    "or continue with" text.
+*/
+.divider p {
+
+    color: #c1c7d0;
+
+    font-size: 14px;
+
+    margin: 0;
+
+    /*
+        Prevent text from wrapping.
+    */
+    white-space: nowrap;
+
+}
+
+
+/* =========================================
+   GOOGLE LOGIN
+   ========================================= */
+
+.other {
+
+    /*
+        Put Google and Apple buttons
+        vertically.
+    */
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+}
+
+
+/*
+    Container where Google's official
+    button will be inserted.
+*/
+.google-container {
+
+    /*
+        Full available width.
+    */
+    width: 100%;
+
+    /*
+        Center Google's button.
+    */
+    display: flex;
+
+    justify-content: center;
+
+}
+
+
+/*
+    IMPORTANT:
+
+    Google creates its own button.
+
+    We should NOT try to recreate Google's
+    internal button styling because Google
+    controls the authentication UI.
+*/
+
+
+/* =========================================
+   APPLE BUTTON
+   ========================================= */
+
+.apple {
+
+    width: 100%;
+
+    height: 50px;
+
+    border: none;
+
+    border-radius: 30px;
+
+    background-color: black;
+
+    color: white;
+
+    font-size: 20px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    /*
+        Put Apple logo and text side-by-side.
+    */
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+}
+
+
+/*
+    Apple logo.
+*/
+.app {
+
+    width: 25px;
+
+    height: 25px;
+
+    object-fit: contain;
+
+}
+
+
+/*
+    Apple button hover.
+*/
+.apple:hover {
+
+    background-color: #222;
+
+}
+
+
+/* =========================================
+   SIGN UP SECTION
+   ========================================= */
+
+.end {
+
+    /*
+        Center the text.
+    */
+    text-align: center;
+
+    /*
+        Space above the section.
+    */
+    margin-top: 35px;
+
+    /*
+        Slightly transparent text.
+    */
+    color: rgba(255, 255, 255, 0.8);
+
+}
+
+
+/*
+    Sign up link.
+*/
+.sig {
+
+    color: white;
+
+    font-weight: bold;
+
+    text-decoration: none;
+
+}
+
+
+/*
+    Sign up hover.
+*/
+.sig:hover {
+
+    text-decoration: underline;
+
+}
+    width: 25 ;
+    margin-right: 5;
+
+    
+}
+
+
+.sig{
+    color: white;
+    text-decoration: none;
+}
+
+.sig:hover{
+    text-decoration: underline;
+}
+
+.logBut{
+    cursor: pointer;
+    width: 450;
+    height: 50;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(4, 182, 4);
+    font-size: 20;
+    font-weight: bold;
+}
+
+.logBut:hover{
+
+    cursor: pointer;
+    width: 450;
+    height: 60;
+    border: none;
+    border-radius: 30px;
+    background-color: rgb(6, 235, 6);
+    font-size: 20;
+    font-weight: bold;
+    transition: .4s;
+}
+
+.cont{
+    margin-left: 60;
+    margin-top: 100;
+}
+
+.app{
+      width: 30 ;
+    margin-right: 5;
+
+}
+
+.google:hover{
+    color: white;
+    background-color: black;
+}
+
+.end {
+    text-align: center;
+    width: 450px;
+}

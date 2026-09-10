@@ -1,0 +1,514 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #06130f;
+    color: white;
+    line-height: 1.6;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+    height: 75px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 9%;
+
+    background: #071712;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+
+/* Logo */
+
+header h2 {
+    font-size: 22px;
+    color: white;
+}
+
+header h2:first-letter {
+    color: #00c878;
+}
+
+
+/* Navigation */
+
+nav {
+    display: flex;
+    gap: 5px;
+}
+
+nav a {
+    color: #d8dfdc;
+    text-decoration: none;
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00c878;
+}
+
+
+/* Login / Get Started */
+
+header > div:last-child {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+header > div:last-child a {
+    text-decoration: none;
+}
+
+header > div:last-child a:first-child {
+    color: white;
+}
+
+header > div:last-child a:last-child {
+    background: #00a86b;
+    color: white;
+
+    padding: 10px 18px;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+header > div:last-child a:last-child:hover {
+    background: #00c878;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+    width: 100%;
+}
+
+
+/* =========================
+   ABOUT INTRO
+========================= */
+
+main > section:first-child {
+    min-height: 550px;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 80px 20px;
+
+    background:
+        linear-gradient(
+            rgba(2, 25, 17, 0.85),
+            rgba(2, 15, 11, 0.95)
+        ),
+        url("../images/ev-car.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+
+main > section:first-child p:first-child {
+    color: #00c878;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+
+main > section:first-child h1 {
+    max-width: 850px;
+
+    font-size: 52px;
+
+    line-height: 1.15;
+
+    margin-bottom: 25px;
+}
+
+
+main > section:first-child p:not(:first-child) {
+    max-width: 750px;
+
+    color: #c5cfcb;
+
+    font-size: 17px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   COMMON SECTIONS
+========================= */
+
+main > section:not(:first-child) {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 70px 30px;
+
+    text-align: center;
+}
+
+
+main > section:not(:first-child) h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 20px;
+
+    color: white;
+}
+
+
+main > section:not(:first-child) > p {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    color: #b8c4bf;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   WHAT WE DO
+========================= */
+
+main > section:nth-child(3) {
+
+    border-top: 1px solid rgba(255,255,255,0.06);
+
+    border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+
+main > section:nth-child(3) ul {
+
+    max-width: 650px;
+
+    margin: 30px auto 0;
+
+    list-style: none;
+
+    text-align: left;
+}
+
+
+main > section:nth-child(3) li {
+
+    background: #0b2119;
+
+    margin-bottom: 12px;
+
+    padding: 15px 20px;
+
+    border-radius: 8px;
+
+    border: 1px solid rgba(0, 200, 120, 0.15);
+
+    color: #d5ddda;
+}
+
+
+main > section:nth-child(3) li::before {
+
+    content: "✓";
+
+    color: #00c878;
+
+    font-weight: bold;
+
+    margin-right: 12px;
+}
+
+
+/* =========================
+   FOUNDERS
+========================= */
+
+main > section:nth-child(4) {
+
+    max-width: 1000px;
+}
+
+
+main > section:nth-child(4) > p {
+
+    margin-bottom: 40px;
+}
+
+
+/* Founder cards */
+
+article {
+
+    width: 330px;
+
+    display: inline-block;
+
+    vertical-align: top;
+
+    margin: 15px;
+
+    padding: 30px 25px;
+
+    background: #0a1d16;
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+article:hover {
+
+    transform: translateY(-8px);
+
+    border-color: rgba(230, 7, 156, 0.4);
+
+    box-shadow: 0 15px 40px rgba(230, 11, 11, 0.3);
+}
+
+
+/* Founder image */
+
+article img {
+
+    width: 190px;
+
+    height: 190px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 4px solid #00a86b;
+
+    margin-bottom: 20px;
+}
+
+
+/* Founder name */
+
+article h3 {
+
+    font-size: 22px;
+
+    margin-bottom: 5px;
+}
+
+
+/* Founder position */
+
+article p:first-of-type {
+
+    color: #00c878;
+
+    font-weight: bold;
+
+    margin-bottom: 12px;
+}
+
+
+/* Founder description */
+
+article p:last-of-type {
+
+    color: #aebbb5;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   VISION
+========================= */
+
+main > section:nth-child(5) {
+
+    background: #0a1d16;
+
+    max-width: 100%;
+
+    padding: 70px 20%;
+
+}
+
+
+main > section:nth-child(5) h2 {
+
+    color: #00c878;
+
+}
+
+
+main > section:nth-child(5) p {
+
+    max-width: 800px;
+
+    color: #c3ccc8;
+
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 25px;
+
+    background: #04100c;
+
+    border-top: 1px solid rgba(255,255,255,0.08);
+
+    color: #899791;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    header {
+        padding: 0 5%;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    main > section:first-child h1 {
+        font-size: 44px;
+    }
+
+    article {
+        width: 300px;
+    }
+}
+
+
+@media (max-width: 650px) {
+
+    header {
+        height: 65px;
+        padding: 0 20px;
+    }
+
+    header h2 {
+        font-size: 18px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header > div:last-child {
+        gap: 10px;
+    }
+
+    header > div:last-child a:first-child {
+        display: none;
+    }
+
+    header > div:last-child a:last-child {
+        padding: 8px 12px;
+        font-size: 13px;
+    }
+
+
+    main > section:first-child {
+        min-height: 500px;
+        padding: 60px 20px;
+    }
+
+    main > section:first-child h1 {
+        font-size: 36px;
+    }
+
+    main > section:first-child p:not(:first-child) {
+        font-size: 15px;
+    }
+
+
+    main > section:not(:first-child) {
+        padding: 55px 20px;
+    }
+
+    main > section:not(:first-child) h2 {
+        font-size: 27px;
+    }
+
+
+    article {
+        width: 100%;
+        max-width: 330px;
+        margin: 10px 0;
+    }
+
+
+    main > section:nth-child(5) {
+        padding: 55px 20px;
+    }
+
+}

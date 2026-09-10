@@ -192,3 +192,12 @@ color: white;
 .p{
     font-size: 18;
 }
+
+.Homebtn{
+  background: transparent;
+  color: white;
+  border: solid 1px white;  
+  cursor: pointer;
+  border-radius: 50px;
+}
+

@@ -966,3 +966,12 @@ body {
     text-align: center;
     width: 450px;
 }
+
+.Homebtn{
+  background: transparent;
+  color: white;
+  border: solid 1px white;  
+  cursor: pointer;
+  border-radius: 50px;
+}
+

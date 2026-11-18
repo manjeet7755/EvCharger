@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  background-color: #061A15;
+  color: #F5F7F6;
+  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility classes */
+.glass-card {
+  background: rgba(13, 41, 33, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid #214438;
+}
+
+.glass-card-elevated {
+  background: rgba(19, 56, 45, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid #2d5a4b;
+}
+
+.glass-input {
+  background: rgba(6, 26, 21, 0.8);
+  border: 1px solid #214438;
+  color: #F5F7F6;
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-input:focus {
+  outline: none;
+  border-color: #20D995;
+  box-shadow: 0 0 15px -3px rgba(32, 217, 149, 0.25);
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #061A15;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #214438;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #20D995;
+}
+
+/* Glow effects */
+.glow-mint {
+  box-shadow: 0 0 25px -5px rgba(32, 217, 149, 0.3);
+}
+
+.glow-mint-text {
+  text-shadow: 0 0 12px rgba(32, 217, 149, 0.5);
+}
+
+/* Subtle grid overlay */
+.bg-grid-pattern {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(33, 68, 56, 0.15) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(33, 68, 56, 0.15) 1px, transparent 1px);
+}
+
